@@ -19,7 +19,7 @@ public void testSettingJobId() {
     assertNotEquals(test_job_1.getId(), test_job_2.getId(), .001);
 }
 @Test
-public void testJobContructorSetsAllFields() {
+public void testJobConstructorSetsAllFields() {
    Job test_job = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
    assertTrue(test_job.getName() instanceof String);
    assertTrue(test_job.getEmployer() instanceof Employer);
