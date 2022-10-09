@@ -49,7 +49,7 @@ public void testToStringStartsAndEndsWithNewLine() {
 @Test
 public void testToStringContainsCorrectLabelsAndData() {
     Job test_job = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-    assertEquals("\nID: 1\nName: Product tester\nEmployer: ACME\nLocation: Desert\nPosition Type: Quality control\nCore Competency: Persistence\n\n",test_job.toString());
+    assertEquals("\nID: 1\nName: Product tester\nEmployer: ACME\nLocation: Desert\nPosition Type: Quality control\nCore Competency: Persistence\n",test_job.toString());
 }
 @Test
 public void testToStringHandlesEmptyField() {
